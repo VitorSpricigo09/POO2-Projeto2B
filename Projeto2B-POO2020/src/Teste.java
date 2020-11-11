@@ -14,15 +14,15 @@ public class Teste  {
 	@Test
 	void testeSoma() {
 		Operacao op = new Operacao();
-		int result = op.somaFracao(1, 2, 2, 4);
-		assertEquals(8 + "/" + 8, result);;
+		int result = op.somaFracao(1, 10, 8, 10);
+		assertEquals(9 + "/" + 10, result);;
 	}
 	
 	@Test
 	void testeSubtracao() {
-		Operacao op = new Operacao(1, 2, 1, 4);
+		Operacao op = new Operacao(1, 4, 1, 8);
 		int result = op.subtraiFracao();
-		assertEquals(2 + "/" + 8, result);
+		assertEquals(4 + "/" + 32, result);
 	}
 	
 	@Test
@@ -42,8 +42,8 @@ public class Teste  {
 	@Test
 	void testeIMC() {
 		Operacao op = new Operacao();
-		double result = op.imc(1.73, 72,00);
-		assertEquals(24.06, result);
+		double result = op.imc(1.70, 69.20);
+		assertEquals(23.94, result);
 	}
 	
 	@Test
