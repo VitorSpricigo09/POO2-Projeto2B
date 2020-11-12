@@ -20,12 +20,7 @@ public class Operacao {
 	public int mmc(int den1, int den2)	{
 		Scanner scan = new Scanner(System.in);
 		int res=0, auxDen1=0, auxDen2=0;
-		
-		System.out.println("Informe o valor do primeiro denominador");
-		den1 = scan.nextInt();
-		System.out.println("Informe o valor do segundo denominador");
-		den2 = scan.nextInt();
-		
+	
 		auxDen1 = den1;
 		auxDen2 = den2;
 		
@@ -70,9 +65,11 @@ public class Operacao {
 		den2 = scan.nextInt();
 		
 		if (den1!=den2) {
-			int mmc = mmc(den1, den2);
-			auxRes1 = (mmc/den1)*num1;
-			auxRes2 = (mmc/den2)*num2;
+			
+			int mmc = mmc(den1,den2);
+			auxRes1 = ((mmc/den1)*num1);
+			auxRes2 = ((mmc/den2)*num2);
+			
 			res = (auxRes1 + auxRes2 + "/" + mmc);
 		}
 		if (den1==den2) {
@@ -112,9 +109,10 @@ public class Operacao {
 		den2 = scan.nextInt();
 		
 		if (den1!=den2) {
-			int mmc = mmc(den1, den2);
-			auxRes1 = (mmc/den1)*num1;
-			auxRes2 = (mmc/den2)*num2;
+			int mmc = mmc(den1,den2);
+			auxRes1 = ((mmc/den1)*num1);
+			auxRes2 = ((mmc/den2)*num2);
+			
 			res = (auxRes1 - auxRes2 + "/" + mmc);
 		}
 		if (den1==den2) {
@@ -336,7 +334,12 @@ public class Operacao {
 		int opcao = scan.nextInt();
 				
 		switch(opcao) {
-		case 1: System.out.println("O valor do MMC e: " + op.mmc(den1, den2) + "\n"); break;
+		case 1:
+			System.out.println("Informe o valor do primeiro denominador");
+			den1 = scan.nextInt();
+			System.out.println("Informe o valor do segundo denominador");
+			den2 = scan.nextInt();
+			System.out.println("O valor do MMC e: " + op.mmc(den1, den2) + "\n"); break;
 		case 2: System.out.println("O valor da Soma e: " + op.somaFracao(num1, den1, num2, den2) + "\n"); break;
 		case 3: System.out.println("O valor da subtracao e: " + op.subtraiFracao(num1, den1, num2, den2) + "\n"); break;
 		case 4: System.out.println("O valor da multiplicacao e: " + op.multiplicaFracao(num1, den1, num2, den2) + "\n"); break;
