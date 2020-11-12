@@ -2,7 +2,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-public class Teste  {
+public class Teste {
 	
 	@Test
 	void testeMMC() {
@@ -14,35 +14,35 @@ public class Teste  {
 	@Test
 	void testeSoma() {
 		Operacao op = new Operacao();
-		int result = op.somaFracao(1, 10, 8, 10);
+		String result = op.somaFracao(1, 10, 8, 10);
 		assertEquals(9 + "/" + 10, result);;
 	}
 	
 	@Test
 	void testeSubtracao() {
-		Operacao op = new Operacao(1, 4, 1, 8);
-		int result = op.subtraiFracao();
+		Operacao op = new Operacao();
+		String result = op.subtraiFracao(1, 4, 1, 8);
 		assertEquals(4 + "/" + 32, result);
 	}
 	
 	@Test
 	void testeMultiplicacao() {
 		Operacao op = new Operacao();
-		int result = op.multiplicaFracao(1, 3, 4, 5);
+		String result = op.multiplicaFracao(1, 3, 4, 5);
 		assertEquals(4 + "/" + 15, result);
 	}
 	
 	@Test
 	void testeDivisao() {
 		Operacao op = new Operacao();
-		int result = op.divideFracao(8, 2, 1, 6);
+		String result = op.divideFracao(8, 2, 1, 6);
 		assertEquals(8 + "/" + 12, result);
 	}
 	
 	@Test
 	void testeIMC() {
 		Operacao op = new Operacao();
-		double result = op.imc(1.70, 69.20);
+		double result = op.imc(170, 69.20);
 		assertEquals(23.94, result);
 	}
 	
