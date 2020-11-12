@@ -50,27 +50,25 @@ public class Operacao {
 	 */
 	
 	public String somaFracao(int num1, int den1, int num2, int den2) {
-		int auxRes1=0, auxRes2=0;
+		int auxNum=0, mmc=0;
 		String res=null;
 		Scanner scan = new Scanner(System.in);
 		Operacao op = new Operacao();
 		
 		System.out.println("Informe o valor do primeiro numerador");
 		num1 = scan.nextInt();
-		System.out.println("Informe o valor do segundo numerador");
-		num2 = scan.nextInt();
 		System.out.println("Informe o valor do primeiro denominador");
 		den1 = scan.nextInt();
+		System.out.println("Informe o valor do segundo numerador");
+		num2 = scan.nextInt();
 		System.out.println("Informe o valor do segundo denominador");
 		den2 = scan.nextInt();
 		
 		if (den1!=den2) {
 			
-			int mmc = mmc(den1,den2);
-			auxRes1 = ((mmc/den1)*num1);
-			auxRes2 = ((mmc/den2)*num2);
-			
-			res = (auxRes1 + auxRes2 + "/" + mmc);
+			mmc = mmc(den1,den2);
+			auxNum = ((mmc/den1)*num1) + ((mmc/den2)*num2);
+			res = (auxNum + "/" + mmc);
 		}
 		if (den1==den2) {
 			res = (num1 + num2 + "/" + den1);
@@ -94,26 +92,25 @@ public class Operacao {
 	 */
 	
 	public String subtraiFracao(int num1, int den1, int num2, int den2) {
-		int auxRes1=0, auxRes2=0;
+		int auxNum=0, mmc=0;
 		String res=null;
 		Scanner scan = new Scanner(System.in);
 		Operacao op = new Operacao();
 		
 		System.out.println("Informe o valor do primeiro numerador");
 		num1 = scan.nextInt();
-		System.out.println("Informe o valor do segundo numerador");
-		num2 = scan.nextInt();
 		System.out.println("Informe o valor do primeiro denominador");
 		den1 = scan.nextInt();
+		System.out.println("Informe o valor do segundo numerador");
+		num2 = scan.nextInt();
 		System.out.println("Informe o valor do segundo denominador");
 		den2 = scan.nextInt();
 		
 		if (den1!=den2) {
-			int mmc = mmc(den1,den2);
-			auxRes1 = ((mmc/den1)*num1);
-			auxRes2 = ((mmc/den2)*num2);
 			
-			res = (auxRes1 - auxRes2 + "/" + mmc);
+			mmc = mmc(den1,den2);
+			auxNum = ((mmc/den1)*num1) - ((mmc/den2)*num2);
+			res = (auxNum + "/" + mmc);
 		}
 		if (den1==den2) {
 			res = (num1 - num2 + "/" + den1);
