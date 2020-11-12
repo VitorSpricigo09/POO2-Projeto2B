@@ -335,10 +335,8 @@ public class Operacao {
 				
 		switch(opcao) {
 		case 1:
-			System.out.println("Informe o valor do primeiro denominador");
-			den1 = scan.nextInt();
-			System.out.println("Informe o valor do segundo denominador");
-			den2 = scan.nextInt();
+			System.out.println("Informe o valor do primeiro denominador"); den1 = scan.nextInt();
+			System.out.println("Informe o valor do segundo denominador"); den2 = scan.nextInt();
 			System.out.println("O valor do MMC e: " + op.mmc(den1, den2) + "\n"); break;
 		case 2: System.out.println("O valor da Soma e: " + op.somaFracao(num1, den1, num2, den2) + "\n"); break;
 		case 3: System.out.println("O valor da subtracao e: " + op.subtraiFracao(num1, den1, num2, den2) + "\n"); break;
