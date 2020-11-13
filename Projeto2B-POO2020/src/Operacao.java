@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
-/*
+		/**
+		 *
 		 * Essa classe apresenta como conteúdo fórmulas matemáticas, sendo elas, o cálculo do MMC, de operações fundamentais em frações, do IMC e de conversões de temperatura
 		 * @author Vitor Spricigo
 		 * 
@@ -9,7 +10,7 @@ import java.util.Scanner;
 public class Operacao {
 	
 	
-	/*
+	/**
 	 * Método para calcular o Mínimo Múltiplo Comum (MMC)
 	 * Fórmula: MMC = (den1 * den2) / mdc
 	 * @param den1 e auxDen1 é o valor do denominador da primeira fração
@@ -34,7 +35,7 @@ public class Operacao {
 		return (den1 * den2) / auxDen1;
 	}
 	
-	/*
+	/**
 	 * Método que efetua a soma de frações
 	 * Cálculo: 
 	 * auxRes1 = (mmc/den1)*num1
@@ -76,7 +77,7 @@ public class Operacao {
 		return res;
 	}
 	
-	/*
+	/**
 	 * Método que efetua a subtração de frações
 	 * Cálculo: 
 	 * auxRes1 = (mmc/den1)*num1
@@ -118,7 +119,7 @@ public class Operacao {
 		return res;
 	}
 	
-	/*
+	/**
 	 * Método que efetua a multiplição de frações
 	 * Cálculo:
 	 * resultado = (num1*num2)/(den1*den2)
@@ -137,17 +138,17 @@ public class Operacao {
 		
 		System.out.println("Informe o valor do primeiro numerador");
 		num1 = scan.nextInt();
-		System.out.println("Informe o valor do segundo numerador");
-		num2 = scan.nextInt();
 		System.out.println("Informe o valor do primeiro denominador");
 		den1 = scan.nextInt();
+		System.out.println("Informe o valor do segundo numerador");
+		num2 = scan.nextInt();
 		System.out.println("Informe o valor do segundo denominador");
 		den2 = scan.nextInt();
 		
 		return ((num1*num2) + "/" + (den1*den2));	
 		}
 	
-	/*
+	/**
 	 * Método que efetua a divisão de frações
 	 * Cálculo:
 	 * resultado = (num1*num2)/(den1*den2)
@@ -166,17 +167,17 @@ public class Operacao {
 		
 		System.out.println("Informe o valor do primeiro numerador");
 		num1 = scan.nextInt();
-		System.out.println("Informe o valor do segundo numerador");
-		num2 = scan.nextInt();
 		System.out.println("Informe o valor do primeiro denominador");
 		den1 = scan.nextInt();
+		System.out.println("Informe o valor do segundo numerador");
+		num2 = scan.nextInt();
 		System.out.println("Informe o valor do segundo denominador");
 		den2 = scan.nextInt();
 		
 		return ((num1*den2) + "/" + (den1*num2));
 	}
 	
-	/*
+	/**
 	 * Método que efetua o cálculo do Índice de Massa Corporal (IMC)
 	 * Cálculo:
 	 * imc = peso/(altura*altura)
@@ -200,7 +201,7 @@ public class Operacao {
 		return imc;
 	}
 	
-	/*
+	/**
 	 * Método que efetua a conversão de Graus Celsius para Kelvin
 	 * Cálculo:
 	 * k = c+273
@@ -218,7 +219,7 @@ public class Operacao {
 		return (c+273.15);
 	}
 	
-	/*
+	/**
 	 * Método que efetua a conversão de Graus Celsius para Farenheit
 	 * Cálculo:
 	 * f = (1,8*c)+32
@@ -236,7 +237,7 @@ public class Operacao {
 		return ((c*1.8)+32);
 	}
 	
-	/*
+	/**
 	 * Método que efetua a conversão de Graus Kelvin para Celsius
 	 * Cálculo:
 	 * c = k-273.15
@@ -254,7 +255,7 @@ public class Operacao {
 		return (k-273.15);
 	}	
 	
-	/*
+	/**
 	 * Método que efetua a conversão de Graus Kelvin para Farenheit
 	 * Cálculo:
 	 * f = ((k-273.15)*1.8)+32
@@ -271,7 +272,7 @@ public class Operacao {
 		return ((k-273.15)*1.8)+32;
 	}	
 	
-	/*
+	/**
 	 * Método que efetua a conversão de Graus Farenheit para Celsius
 	 * Cálculo:
 	 * c = (f-32)/1.8
@@ -288,7 +289,7 @@ public class Operacao {
 		return (f-32)/1.8;
 	}	
 	
-	/*
+	/**
 	 * Método que efetua a conversão de Graus Farenheit para Kelvin
 	 * Cálculo:
 	 * k = ((f-32)/1.8)+273.15
