@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 		/**
 		 *
-		 * Essa classe apresenta como conteúdo fórmulas matemáticas, sendo elas, o cálculo do MMC, de operações fundamentais em frações, do IMC e de conversões de temperatura
+		 * Essa classe apresenta formulas matematicas, sendo elas, o calculo do MMC, operações fundamentais em fracoes, IMC e conversoes de temperatura
 		 * @author Vitor Spricigo
 		 * 
 		*/
@@ -11,11 +11,11 @@ public class Operacao {
 	
 	
 	/**
-	 * Método para calcular o Mínimo Múltiplo Comum (MMC)
-	 * Fórmula: MMC = (den1 * den2) / mdc
-	 * @param den1 e auxDen1 é o valor do denominador da primeira fração
-	 * @param den2 e auxDen2 é o valor do denominador da segunda fração
-	 * @return função retorna o resultado do MMC
+	 * Metodo para calcular o Minimo Multiplo Comum (MMC)
+	 * Formula: MMC = (den1 * den2) / mdc
+	 * @param den1 é o valor do denominador da primeira fração
+	 * @param den2 é o valor do denominador da segunda fração
+	 * @return funcao retorna o resultado do MMC
 	 */
 
 	public int mmc(int den1, int den2)	{
@@ -36,18 +36,18 @@ public class Operacao {
 	}
 	
 	/**
-	 * Método que efetua a soma de frações
-	 * Cálculo: 
-	 * auxRes1 = (mmc/den1)*num1
-	 * auxRes2 = (mmc/den2)*num2
-	 * res = (auxRes1 + auxRes2)/mmc
-	 * @param num1 é o valor do numerador da primeira fracao
-	 * @param num2 é o valor do numerador da segunda fracao
-	 * @param den1 é o valor do denominador da primeira fracao
-	 * @param den2 é o valor do denominador da segunda fracao
-	 * @param res é o resultado da soma de duas frações
-	 * @return função retorna o valor resultado da soma
-	 * 
+	 * Metodo que efetua a soma de fracoes
+	 * Calculo:
+	 * caso denominadores diferentes 
+	 * auxNum = ((mmc/den1)*num1) + ((mmc/den2)*num2)
+	 * res = (auxNum/mmc)
+	 * caso numeradores iguais
+	 * res = (num1 - num2)/mmc
+	 * @param num1 e o valor do numerador da primeira fracao
+	 * @param num2 e o valor do numerador da segunda fracao
+	 * @param den1 e o valor do denominador da primeira fracao
+	 * @param den2 e o valor do denominador da segunda fracao
+	 * @return res funcao retorna o valor resultado da soma de duas fracoes
 	 */
 	
 	public String somaFracao(int num1, int den1, int num2, int den2) {
@@ -78,18 +78,18 @@ public class Operacao {
 	}
 	
 	/**
-	 * Método que efetua a subtração de frações
-	 * Cálculo: 
-	 * auxRes1 = (mmc/den1)*num1
-	 * auxRes2 = (mmc/den2)*num2
-	 * res = (auxRes1 - auxRes2)/mmc
+	 * Metodo que efetua a subtracao de fraçoes
+	 * Calculo:
+	 * caso denominadores diferentes 
+	 * auxNum = ((mmc/den1)*num1) - ((mmc/den2)*num2)
+	 * res = (auxNum/mmc)
+	 * caso numeradores iguais
+	 * res = (num1 - num2)/mmc
 	 * @param num1 é o valor do numerador da primeira fracao
 	 * @param num2 é o valor do numerador da segunda fracao
 	 * @param den1 é o valor do denominador da primeira fracao
 	 * @param den2 é o valor do denominador da segunda fracao
-	 * @param res é o resultado da subtração de duas frações
-	 * @return função retorna o valor resultado da subtração
-	 * 
+	 * @return res função retorna o valor resultado da subtração de duas fracoes
 	 */
 	
 	public String subtraiFracao(int num1, int den1, int num2, int den2) {
@@ -120,16 +120,14 @@ public class Operacao {
 	}
 	
 	/**
-	 * Método que efetua a multiplição de frações
-	 * Cálculo:
-	 * resultado = (num1*num2)/(den1*den2)
-	 * @param num1 é o valor do numerador da primeira fracao
-	 * @param num2 é o valor do numerador da segunda fracao
-	 * @param den1 é o valor do denominador da primeira fracao
-	 * @param den2 é o valor do denominador da segunda fracao
-	 * @param res é o resultado da multiplicação de duas frações
-	 * @return função retorna o valor resultado da multiplicação
-	 * 
+	 * Metodo que efetua a multiplicao de fracoes
+	 * Calculo:
+	 * res = (num1*num2)/(den1*den2)
+	 * @param num1 e o valor do numerador da primeira fracao
+	 * @param num2 e o valor do numerador da segunda fracao
+	 * @param den1 e o valor do denominador da primeira fracao
+	 * @param den2 e o valor do denominador da segunda fracao
+	 * @return res funcao retorna o valor resultado da multiplicacao de duas fracoes
 	 */
 	
 	public String multiplicaFracao(int num1, int den1, int num2, int den2) {
@@ -149,16 +147,14 @@ public class Operacao {
 		}
 	
 	/**
-	 * Método que efetua a divisão de frações
-	 * Cálculo:
+	 * Metodo que efetua a divisao de fracoes
+	 * Calculo:
 	 * resultado = (num1*num2)/(den1*den2)
-	 * @param num1 é o valor do numerador da primeira fracao
-	 * @param num2 é o valor do numerador da segunda fracao
-	 * @param den1 é o valor do denominador da primeira fracao
-	 * @param den2 é o valor do denominador da segunda fracao
-	 * @param res é o resultado da divisão de duas frações
-	 * @return função retorna o valor resultado da divisão
-	 * 
+	 * @param num1 e o valor do numerador da primeira fracao
+	 * @param num2 e o valor do numerador da segunda fracao
+	 * @param den1 e o valor do denominador da primeira fracao
+	 * @param den2 e o valor do denominador da segunda fracao
+	 * @return res funcao retorna o valor resultado da divisão de duas fracoes
 	 */
 	
 	public String divideFracao(int num1, int den1, int num2, int den2) {
@@ -178,14 +174,12 @@ public class Operacao {
 	}
 	
 	/**
-	 * Método que efetua o cálculo do Índice de Massa Corporal (IMC)
-	 * Cálculo:
+	 * Metodo que efetua o calculo do Indice de Massa Corporal (IMC)
+	 * Calculo:
 	 * imc = peso/(altura*altura)
-	 * @param peso é o valor do peso em Quilogramas
-	 * @param altura é o valor da altura em Centímetros
-	 * @param imc é o resultado do cálculo
-	 * @return função retorna o valor resultado do imc
-	 * 
+	 * @param peso e o valor do peso em Quilogramas
+	 * @param altura e o valor da altura em Centimetros
+	 * @return imc função retorna o valor resultado do imc
 	 */
 	
 	public double imc(double altura, double peso) {
@@ -202,13 +196,11 @@ public class Operacao {
 	}
 	
 	/**
-	 * Método que efetua a conversão de Graus Celsius para Kelvin
-	 * Cálculo:
+	 * Metodo que efetua a conversao de Graus Celsius para Kelvin
+	 * Calculo:
 	 * k = c+273
 	 * @param c = temperatura em graus Celcius
-	 * @param k = temperatura convertida em graus Kelvin
-	 * @return função retorna o valor resultado da conversão Celsius-Kelvin
-	 * 
+	 * @return função retorna o valor resultado da conversao Celsius-Kelvin
 	 */
 	
 	public double celsiusToKelvin(double c) {
@@ -220,13 +212,11 @@ public class Operacao {
 	}
 	
 	/**
-	 * Método que efetua a conversão de Graus Celsius para Farenheit
-	 * Cálculo:
+	 * Metodo que efetua a conversao de Graus Celsius para Farenheit
+	 * Calculo:
 	 * f = (1,8*c)+32
 	 * @param c = temperatura em graus Celcius
-	 * @param f = temperatura convertida em graus Farenheit
-	 * @return função retorna o valor resultado da conversão Celsius-Farenheit
-	 * 
+	 * @return funcao retorna o valor resultado da conversao Celsius-Farenheit
 	 */
 	
 	public double celsiusToFarenheit(double c) {
@@ -238,12 +228,11 @@ public class Operacao {
 	}
 	
 	/**
-	 * Método que efetua a conversão de Graus Kelvin para Celsius
-	 * Cálculo:
+	 * Metodo que efetua a conversao de Graus Kelvin para Celsius
+	 * Calculo:
 	 * c = k-273.15
 	 * @param k = temperatura em graus Kelvin
-	 * @param c = temperatura convertida em graus Celsius
-	 * @return função retorna o valor resultado da conversão Kelvin-Celcius
+	 * @return funcao retorna o valor resultado da conversao Kelvin-Celcius
 	 * 
 	 */
 	
@@ -256,12 +245,11 @@ public class Operacao {
 	}	
 	
 	/**
-	 * Método que efetua a conversão de Graus Kelvin para Farenheit
-	 * Cálculo:
+	 * Metodo que efetua a conversao de Graus Kelvin para Farenheit
+	 * Calculo:
 	 * f = ((k-273.15)*1.8)+32
 	 * @param k = temperatura em graus Kelvin
-	 * @param f = temperatura convertida em graus Farenheit
-	 * @return função retorna o valor resultado da conversão Kelvin-Farenheit
+	 * @return funcao retorna o valor resultado da conversao Kelvin-Farenheit
 	 */
 	
 	public double kelvinToFarenheit(double k) {
@@ -273,12 +261,11 @@ public class Operacao {
 	}	
 	
 	/**
-	 * Método que efetua a conversão de Graus Farenheit para Celsius
-	 * Cálculo:
+	 * Metodo que efetua a conversao de Graus Farenheit para Celsius
+	 * Calculo:
 	 * c = (f-32)/1.8
 	 * @param f = temperatura em graus Farenheit
-	 * @param c = temperatura convertida em graus Celsius
-	 * @return função retorna o valor resultado da conversão Farenheit-Celcius
+	 * @return funcao retorna o valor resultado da conversao Farenheit-Celcius
 	 */
 	
 	public double farenheitToCelsius(double f) {
@@ -290,12 +277,11 @@ public class Operacao {
 	}	
 	
 	/**
-	 * Método que efetua a conversão de Graus Farenheit para Kelvin
-	 * Cálculo:
+	 * Metodo que efetua a conversao de Graus Farenheit para Kelvin
+	 * Calculo:
 	 * k = ((f-32)/1.8)+273.15
 	 * @param f = temperatura em graus Farenheit
-	 * @param k = temperatura convertida em graus Kelvin
-	 * @return função retorna o valor resultado da conversão Farenheit-Kelvin
+	 * @return funcao retorna o valor resultado da conversao Farenheit-Kelvin
 	 */
 	
 	public double farenheitToKelvin(double f) {
